@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/Logo.JPG" alt="Logo" />
+        </div>
+        <ul class="nav-list">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/attractions.html">Attractions</a></li>
+            <li><a href="/dining.html">Dining</a></li>
+            <li><a href="/lodging.html">Lodging</a></li>
+            <li><a href="/transportation.html">transportation</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Sign Up</h1>
+    </div>
+
+    
+    </div>
+    <!--
+    TODO: add method="POST" to form
+     -->
+    <form action="/index.html" class="signup-grid">
+        <!-- first name -->
+        <label for="inputFirstName" class="info-label">First Name:</label>
+        <input type="text" class="info-input" id="inputFirstName" name="inputFirstName" placeholder="first name...">
+        <!-- last name -->
+        <label for="inputLastName" class="info-label">Last Name:</label>
+        <input type="text" class="info-input" id="inputLastName" name="inputLastName" placeholder="last name...">
+        <!-- phone number -->
+        <label for="inputPhone" class="info-label">Phone #:</label>
+        <input type="text" class="info-input" id="inputPhone" name="inputPhone" placeholder="xxx-xxx-xxxx">
+        <!-- email -->
+        <label for="email" class="info-label">Email:</label>
+        <input type="email" class="info-input" id="email" name="email" placeholder="input email...">
+        <!-- travel date -->
+        <label for="travelDate" class="info-label">Travel Date:</label>
+        <input type="date" class="info-input" id="travelDate" name="travelDate">
+        <!-- travel mode -->
+        <label for="travelModeAir" class="info-label">Air</label>
+        <label for="travelModeCruise" class="info-label">Cruise</label>
+        <div class="radio-box">
+            <input type="radio" class="radio-button" id="travelModeAir" name="travelMode" value="air">
+        </div>
+        <div class="radio-box">
+            <input type="radio" class="radio-button" id="travelModeCruise" name="travelMode" value="cruise">
+        </div>
+        <!-- submit button -->
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+
+    <footer>
+        <a href="/faq.html">FAQ</a>
+        <a href="/citations.html">citations</a>
+    </footer>
+</body>
+
+</html>
