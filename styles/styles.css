@@ -4,7 +4,7 @@ Global Content
 /* ensuring no white spaces on the body */
 body{
     margin: 0px;
-    background-image:url('assets/background-ed-wingate-VufAlVMm60k-unsplash.jpg');
+    background-image:url('/assets/background-ed-wingate-VufAlVMm60k-unsplash.jpg');
     background-size:cover;
 }
 
@@ -35,15 +35,15 @@ h1 {
 /* The font of every page should follow this scheme. */
 p{
     font-size: 1.2em;
-    color: #fef300;
-    text-shadow: 1px 1px 0px #fe0000, -1px -1px 0px #fe0000, 1px -1px 0px #fe0000, -1px 1px 0px #fe0000;
+    color: black;
+    /*text-shadow: 1px 1px 0px #fe0000, -1px -1px 0px #fe0000, 1px -1px 0px #fe0000, -1px 1px 0px #fe0000;*/
     font-family: cursive;
     line-height: 1.8;
 }
 li {
     font-size: 1.2em;
-    color: #fef300;
-    text-shadow: 1px 1px 0px #fe0000, -1px -1px 0px #fe0000, 1px -1px 0px #fe0000, -1px 1px 0px #fe0000;
+    color: black;
+    /* text-shadow: 1px 1px 0px #fe0000, -1px -1px 0px #fe0000, 1px -1px 0px #fe0000, -1px 1px 0px #fe0000; */
     font-family: cursive;
 }
 
