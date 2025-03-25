@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -31,30 +31,37 @@
     TODO: add method="POST" to form
      -->
     <form action="/website/index.html" class="signup-grid">
+
         <!-- first name -->
-        <label for="inputFirstName" class="info-label">First Name:</label>
-        <input type="text" class="info-input" id="inputFirstName" name="inputFirstName" placeholder="first name...">
+        <label for="firstName" class="info-label">First Name:</label>
+        <input type="text" class="info-input" id="firstName" name="firstName" placeholder="first name...">
+
         <!-- last name -->
-        <label for="inputLastName" class="info-label">Last Name:</label>
-        <input type="text" class="info-input" id="inputLastName" name="inputLastName" placeholder="last name...">
+        <label for="lastName" class="info-label">Last Name:</label>
+        <input type="text" class="info-input" id="lastName" name="lastName" placeholder="last name...">
+
         <!-- phone number -->
-        <label for="inputPhone" class="info-label">Phone #:</label>
-        <input type="text" class="info-input" id="inputPhone" name="inputPhone" placeholder="xxx-xxx-xxxx">
+        <label for="phone" class="info-label">Phone #:</label>
+        <input type="tel" class="info-input" id="phone" name="phone" placeholder="(123)-456-7890">
+        
         <!-- email -->
         <label for="email" class="info-label">Email:</label>
-        <input type="email" class="info-input" id="email" name="email" placeholder="input email...">
+        <input type="email" class="info-input" id="email" name="email" placeholder="email...">
+
         <!-- travel date -->
         <label for="travelDate" class="info-label">Travel Date:</label>
-        <input type="date" class="info-input" id="travelDate" name="travelDate">
+        <input type="date" class="info-input" id="travelDate" name="travelDate" required min="2025-03-25">
+
         <!-- travel mode -->
-        <label for="travelModeAir" class="info-label">Air</label>
-        <label for="travelModeCruise" class="info-label">Cruise</label>
+        <label for="travelModeAir" for="travelModeAir" class="info-label">Air</label>
+        <label for="travelModeCruise" for="travelModeCruise" class="info-label">Cruise</label>
         <div class="radio-box">
             <input type="radio" class="radio-button" id="travelModeAir" name="travelMode" value="air">
         </div>
         <div class="radio-box">
             <input type="radio" class="radio-button" id="travelModeCruise" name="travelMode" value="cruise">
         </div>
+
         <!-- submit button -->
         <button type="submit" class="submit-button">Submit</button>
     </form>

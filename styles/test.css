@@ -1,0 +1,117 @@
+body {
+    display: contents;
+    margin: 0px;
+    height: 100vh;
+    width: 100vh;
+}
+
+/* background image covers the entire background screen */
+.background{
+    position: fixed;
+    background-image: url('/assets/background-ed-wingate-VufAlVMm60k-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    z-index: -1;
+}
+
+/* logo */
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 6vw;
+    border-radius: 0 0 2vw 0;
+    box-shadow: 0 0 .5vw .5vw #a5e1ec;
+    z-index: 1;
+}
+
+/* used to house the nav bar so we can center it */
+.navContainer{
+    display: flex;
+    justify-content: center;
+}
+
+/* The nav bar */
+nav {
+    display: flex;
+    /* this makes sure the items wrap to the next line if not enough space is present on screen */
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 70vw;
+    justify-content: center;
+}
+
+/* unordered list container for links  */
+.nav-list {
+    position: absolute;
+    top: -14px;
+    max-width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 2vh;
+    list-style: none;
+    gap: 56px;
+    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.2), 6px 6px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    border: 2px inset rgba(0, 0, 0, 0.2);
+}
+
+/* nav bar links */
+.nav-list li a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px 12px 24px;
+    color: blue;
+    font-family: cursive;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    transition: border-color .5s ease;
+    transition: color .2s ease;
+    border-radius: 18px;
+}
+@keyframes borderColorChange {
+    0% {
+        border-color: red;
+    }
+
+    25% {
+        border-color: blue;
+    }
+
+    50% {
+        border-color: green;
+    }
+
+    75% {
+        border-color: yellow;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
+
+.nav-list li a:hover {
+    color: #fef300;
+    border-top: 4px solid blue;
+    border-bottom: 4px solid blue;
+}
+
+.planTripLink {
+    border: 2px solid;
+    animation: borderColorChange 4s infinite;
+}

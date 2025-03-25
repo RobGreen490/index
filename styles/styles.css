@@ -4,7 +4,7 @@ Global Content
 /* ensuring no white spaces on the body */
 body{
     margin: 0px;
-    background-image:url('assets/background-ed-wingate-VufAlVMm60k-unsplash.jpg');
+    background-image:url('/assets/background-ed-wingate-VufAlVMm60k-unsplash.jpg');
     background-size:cover;
 }
 
@@ -213,65 +213,7 @@ Index page
 *********/
 
 
-/**********************************************************************************************************************************
-attractions page*/
-/* a grid container with 2 columns and an auto amount of rows */
-.grid-container-attractions {
-    display: grid;
-    /* 2 columns with equal width */
-    grid-template-columns: 1fr 1fr;
-    /* 2 rows with auto height */
-    grid-template-rows: auto auto;
-    /* Optional: gap between grid items */
-    gap: 100px;
-    /* Optional: padding for the grid container */
-    padding: 48px;
-    margin-bottom: 90px;
-}
 
-/* I'll use this to contain the images in */
-.image-container{
-    /* width of the box */
-    width: 100%;
-    /* height of the box */
-    height: 100%;
-    /* maximum height of the box */
-    max-height: fit-content;
-    /* hiding anything that flows outside the box */
-    overflow: hidden;
-    /* centering image */
-    display: flex;
-    /* horizontal centering */
-    justify-content: center;
-    /* vertical centering */
-    align-items: center;
-    /* bluring the background */
-    backdrop-filter: blur(10px);
-    border-radius: 24px;
-    box-shadow: -6px 6px 6px #000000, 6px -6px 6px #000000;
-}
-.attraction-image{
-    /* image will fill this much of the containers width */
-    width: 60%;
-    /* image will fill this much of the containers height */
-    height: 80%;
-    /* ensures the image covers the container proportionally */
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 24px;
-}
-
-.attraction-info-container{
-    backdrop-filter: blur(10px);
-    border-radius: 24px;
-    box-shadow: -6px 6px 6px #000000, 6px -6px 6px #000000;
-    align-content: center;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-/*
-attractions page
-***************/
 
 
 /**********************************************************************************************************************************
@@ -453,3 +395,64 @@ Citation page*/
 
 /* FAQ page
 **************/
+/**********************************************************************************************************************************
+attractions page*/
+/* a grid container with 2 columns and an auto amount of rows */
+.grid-container-attractions {
+    display: grid;
+    /* 2 columns with equal width */
+    grid-template-columns: 1fr 1fr;
+    /* 2 rows with auto height */
+    grid-template-rows: auto auto;
+    /* Optional: gap between grid items */
+    gap: 100px;
+    /* Optional: padding for the grid container */
+    padding: 48px;
+    margin-bottom: 90px;
+}
+
+/* I'll use this to contain the images in */
+.image-container {
+    /* width of the box */
+    width: 100%;
+    /* height of the box */
+    height: 100%;
+    /* maximum height of the box */
+    max-height: fit-content;
+    /* hiding anything that flows outside the box */
+    overflow: hidden;
+    /* centering image */
+    display: flex;
+    /* horizontal centering */
+    justify-content: center;
+    /* vertical centering */
+    align-items: center;
+    /* bluring the background */
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    box-shadow: -6px 6px 6px #000000, 6px -6px 6px #000000;
+}
+
+.attraction-image {
+    /* image will fill this much of the containers width */
+    width: 60%;
+    /* image will fill this much of the containers height */
+    height: 80%;
+    /* ensures the image covers the container proportionally */
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.attraction-info-container {
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    box-shadow: -6px 6px 6px #000000, 6px -6px 6px #000000;
+    align-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/*
+attractions page
+***************/
