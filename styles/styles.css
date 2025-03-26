@@ -4,7 +4,7 @@ Global Content
 /* ensuring no white spaces on the body */
 body{
     margin: 0px;
-    background-image:url('/../assets/global/background-ed-wingate-VufAlVMm60k-unsplash.jpg');
+    background-image:url('../assets/global/background-ed-wingate-VufAlVMm60k-unsplash.jpg');
     background-size:cover;
 }
 
