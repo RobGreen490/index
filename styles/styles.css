@@ -39,13 +39,7 @@ p{
     text-shadow: 1px 1px 0px #FFF, -1px -1px 0px #FFF, 1px -1px 0px #FFF, -1px 1px 0px #FFF;
     font-family: cursive;
     line-height: 1.8;
-    backdrop-filter: blur(10px);
 }
-
-ul{
-    backdrop-filter: blur(10px);
-}
-
 li {
     font-size: 1.2em;
     color: #000;
@@ -155,7 +149,6 @@ Index page*/
     grid-template-columns: 70% 30%;
     width: 100%;
     margin-top: 24px;
-    backdrop-filter: blur(10px);
 }
 
 /*container to ensure content isn't hugging the left of the website*/
