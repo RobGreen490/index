@@ -39,7 +39,13 @@ p{
     text-shadow: 1px 1px 0px #FFF, -1px -1px 0px #FFF, 1px -1px 0px #FFF, -1px 1px 0px #FFF;
     font-family: cursive;
     line-height: 1.8;
+    backdrop-filter: blur(10px);
 }
+
+ul{
+    backdrop-filter: blur(10px);
+}
+
 li {
     font-size: 1.2em;
     color: #000;
