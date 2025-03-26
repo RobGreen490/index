@@ -155,6 +155,7 @@ Index page*/
     grid-template-columns: 70% 30%;
     width: 100%;
     margin-top: 24px;
+    backdrop-filter: blur(10px);
 }
 
 /*container to ensure content isn't hugging the left of the website*/
