@@ -231,9 +231,9 @@ Dining page*/
 }
 
 h3{
-    color: #fef300;
-    text-shadow: 1px 1px 0px #fe0000, -1px -1px 0px #fe0000, 1px -1px 0px #fe0000, -1px 1px 0px #fe0000;
-    border-bottom: 2px solid #fef300;
+    color: #000;
+    text-shadow: 1px 1px 0px #FFF, -1px -1px 0px #FFF, 1px -1px 0px #FFF, -1px 1px 0px #FFF;
+    border-bottom: 2px solid #FFF;
     padding-bottom: 12px;
     width: 20%;
 }
@@ -275,8 +275,8 @@ display: grid;
 
 .info-label{
     font-size: 2em;
-    color: #fef300;
-    text-shadow: 1px 1px 0px #fe0000, -1px -1px 0px #fe0000, 1px -1px 0px #fe0000, -1px 1px 0px #fe0000;
+    color: #000;
+    text-shadow: 1px 1px 0px #FFF, -1px -1px 0px #FFF, 1px -1px 0px #FFF, -1px 1px 0px #FFF;
     font-family: cursive;
     text-align: center;
 }
@@ -363,8 +363,8 @@ Citation page*/
     animation: borderColorChange 2s infinite;
     text-decoration: none;
     font-size: 1.1em;
-    color: #fef300;
-    text-shadow: 1px 1px 0px #fe0000, -1px -1px 0px #fe0000, 1px -1px 0px #fe0000, -1px 1px 0px #fe0000;
+    color: #000;
+    text-shadow: 1px 1px 0px #FFF, -1px -1px 0px #FFF, 1px -1px 0px #FFF, -1px 1px 0px #FFF;
     font-family: cursive;
     
 }
@@ -389,8 +389,8 @@ Citation page*/
     font-size: 48px;
     text-align: center;
     align-content: center;
-    color: #fef300;
-    text-shadow: 1px 1px 0px #fe0000, -1px -1px 0px #fe0000, 1px -1px 0px #fe0000, -1px 1px 0px #fe0000;
+    color: #000;
+    text-shadow: 1px 1px 0px #FFF, -1px -1px 0px #FFF, 1px -1px 0px #FFF, -1px 1px 0px #FFF;
 }
 
 /* FAQ page
