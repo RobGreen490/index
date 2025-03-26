@@ -8,7 +8,6 @@ body {
 /* background image covers the entire background screen */
 .background{
     position: fixed;
-    background-image: url('assets/background-ed-wingate-VufAlVMm60k-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
