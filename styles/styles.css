@@ -1,458 +1,150 @@
-/**********************************************************************************************************************************
-Global Content 
-*/
-/* ensuring no white spaces on the body */
 body{
-    margin: 0px;
-    background-image: url('/website/assets/global/background-ed-wingate-VufAlVMm60k-unsplash.jpg');
-    background-size:cover;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'lato', sans-serif;
+    color: #2e354f;
 }
 
-/* The logo is glued to the top left of the page */
-.logo {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-/* Setting the size and adding a shadow around the picture to make it look blended with the website  */
-.logo img {
-    height: 120px;
-    width: 240px;
-    border-radius: 0 0 12px 0;
-    box-shadow: 0 0 12px 24px #a5e1ec;
-}
-
-/* The title of every page is an h1 header */
-h1 {
-    padding-left: 24px;
-    font-family: cursive;
-    color: black;
-    text-shadow: 2px 2px 0px #FFF, -2px -2px 0px #FFF, 2px -2px 0px #FFF, -2px 2px 0px #FFF;
-    font-size: 4em;
-}
-
-/* The font of every page should follow this scheme. */
-p{
-    font-size: 1.2em;
-    color: black;
-    text-shadow: 1px 1px 0px #FFF, -1px -1px 0px #FFF, 1px -1px 0px #FFF, -1px 1px 0px #FFF;
-    font-family: cursive;
-    line-height: 1.8;
-}
-li {
-    font-size: 1.2em;
-    color: #000;
-    text-shadow: 1px 1px 0px #FFF, -1px -1px 0px #FFF, 1px -1px 0px #FFF, -1px 1px 0px #FFF;
-    font-family: cursive;
-}
-
-/* The nav bar */
-nav {
-    display: flex;
-    /* this makes sure the items wrap to the next line if not enough space is present on screen */
-    flex-wrap: wrap;
-    height: fit-content;
+img{
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-}
-
-/* link list container  */
-.nav-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    height: fit-content;
-    padding: 12px 200px 12px 200px;
-    list-style: none;
-    gap: 56px;
-    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.2), 6px 6px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
-    border: 2px inset rgba(0, 0, 0, 0.2);
-}
-
-/* nav bar links */
-.nav-list li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 24px 8px 24px;
-    color: blue;
-    font-family: cursive;
-    font-size: 28px;
-    text-decoration: none;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    transition: border-color .5s ease;
-    transition: color .2s ease;
-    border-radius: 18px;
-}
-
-.plan-trip-link{
-    border: 2px solid;
-    animation: borderColorChange 4s infinite;
-}
-
-
-/* nav bar links interaction when hovered over */
-.nav-list li a:hover {
-    color: #fef300;
-    border-top: 4px solid blue;
-    border-bottom: 4px solid blue;
-}
-
-/* the footer bar */
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0%;
-    left: 0%;
-    display: flex;
-    justify-content: left;
-    background-color: gray;
-    gap: 24px;
-    box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* footer bar link */
-footer a {
-    padding: 12px 42px 12px 42px;
-    background-color: #9F9F9F;
-    color: #000000;
-    font-weight:bolder;
-    font-family: cursive;
-    font-style: italic;
-    font-size: 12px;
-    text-align: center;
-    text-decoration: none;
-}
-
-/* footer bar links interaction when hovered over */
-footer a:hover {
-    color: blue;
-    background-color: azure;
-}
-/* Global Content
-****************/
-
-
-/**********************************************************************************************************************************
-Index page*/
-/* the left side of the page */
-.indexContainer {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    width: 100%;
-    margin-top: 24px;
-}
-
-/*container to ensure content isn't hugging the left of the website*/
-.indexContainerChild{
-    margin-left: 24px;
-}
-
-/* button link to signup page */
-.button {
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    background-color: #1ADBD5;
-    border: 4px solid transparent;
-    border-radius: 12px;
-    padding: 24px 48px;
-    font-family: cursive;
-    text-align: center;
-    font-size: 24px;
-    text-decoration: none;
-    animation: borderColorChange 4s infinite;
-    transition: border .5s ease;
-    transition: color .2s ease;
-}
-
-@keyframes borderColorChange {
-    0% {
-        border-color: red;
-    }
-
-    25% {
-        border-color: blue;
-    }
-
-    50% {
-        border-color: green;
-    }
-
-    75% {
-        border-color: yellow;
-    }
-
-    100% {
-        border-color: red;
-    }
-}
-
-.buttonContainer{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-top: 144px;
-}
-
-/* button link interaction when hovered over */
-.button:hover {
-    color: #fef300;
-    border: 4px solid blue;
-}
-/*
-Index page
-*********/
-
-
-
-
-
-/**********************************************************************************************************************************
-Dining page*/
-.grid-container-dining{
-    display: grid;
-    /* 2 columns with equal width */
-    grid-template-columns: 1fr 1fr;
-    /* 2 rows with auto height */
-    grid-template-rows: auto auto;
-    /* Optional: gap between grid items */
-    gap: 100px;
-    /* Optional: padding for the grid container */
-    padding: 48px;
-}
-
-h3{
-    color: #000;
-    text-shadow: 1px 1px 0px #FFF, -1px -1px 0px #FFF, 1px -1px 0px #FFF, -1px 1px 0px #FFF;
-    border-bottom: 2px solid #FFF;
-    padding-bottom: 12px;
-    width: 20%;
-}
-.dining-left-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 42px;
-}
-
-.dining-right-grid{
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 42px;
-}
-/* Dining Page
-*************/
-
-
-/**********************************************************************************************************************************
-sign-up page*/
-.signup-grid{
-display: grid;
-    width: 20%;
-    /* 2 columns with equal width */
-    grid-template-columns: 1fr 1fr;
-    /* 2 rows with auto height */
-    grid-template-rows: auto auto;
-    /* Optional: gap between grid items */
-    row-gap: 48px;
-    column-gap: 12px;
-    /* Optional: padding for the grid container */
-    padding: 48px;
-    margin-bottom: 90px;
-    backdrop-filter: blur(1px);
     border-radius: 24px;
 }
 
-.info-label{
-    font-size: 2em;
-    color: #000;
-    text-shadow: 1px 1px 0px #FFF, -1px -1px 0px #FFF, 1px -1px 0px #FFF, -1px 1px 0px #FFF;
-    font-family: cursive;
+h1{
     text-align: center;
 }
 
-.info-input{
-    align-items: center;
-    justify-content: center;
+h1,
+h2,
+strong{
+    font-weight: 900;
+}
+
+/* typography */
+
+h1{
+    font-size: 36px;
+    margin: 0;
+}
+
+h2{
     font-size: 24px;
+    color: #ef5839;
 }
 
-.radio-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+a{
+    color:#ef5839;
 }
 
-.radio-button{
-    transform: scale(3);
-    align-items: start;
-}
-
-.submit-button{
+li a {
+    display: block;
+    min-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 12px;
+    margin-bottom: 12px;
     padding: 24px;
-    box-shadow: 2px 2px 2px #000000;
-}
-/* sign-up page
-**************/
-
-/**********************************************************************************************************************************
-FAQ page*/
-.faq-header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    border-radius: 12px;
+    color: #fff;
+    background-color: #ef5839;
 }
 
-.faq-container{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    line-height: 1.8;
+a:hover,
+a:focus{
+    color: #d4b44c;
 }
 
-/* FAQ page
-**************/
 
-/**********************************************************************************************************************************
-Citation page*/
-.grid-container-citations {
-    display: grid;
-    /* 2 columns with equal width */
-    grid-template-columns:1fr 1fr;
-    /* 2 rows with auto height */
-    grid-template-rows: auto auto;
-    /* Optional: gap between grid items */
-    gap: 100px;
-    /* Optional: padding for the grid container */
-    padding: 48px;
-}
+/* buttons */
 
-.grid-item{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    border: 2px solid black;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    border-radius: 24px;
-    backdrop-filter: blur(10px);
-}
-
-.citationA{
-    display: flex;
-    width: 50%;
-    margin-left: 24px;
-    border: 2px solid black;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px 4px 0px 0px;
-    padding: 24px 0 24px 0;
-    border: 4px solid;
-    border-radius: 24px;
-    animation: borderColorChange 2s infinite;
+.btn{
+    display: inline-block;
+    padding: 10px 25px;
     text-decoration: none;
-    font-size: 1.1em;
-    color: #000;
-    text-shadow: 1px 1px 0px #FFF, -1px -1px 0px #FFF, 1px -1px 0px #FFF, -1px 1px 0px #FFF;
-    font-family: cursive;
-    
 }
 
-.citation-image-container{
-    width: 100%;
-    height: 100%;
-    max-height: fit-content;
-    overflow: hidden;
+.btn-accent{
+    background: #ef5839;
+    color: #fff;
+}
+
+.nav-btn{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border-radius: 50px;
+    cursor: pointer;
+    border: solid 4px green;
+}
+
+nav a:hover{
+    color: #2e354f;
+    background: #d4b44c;
+}
+
+.nav-btn:hover{
+    color: #2e354f;
+    background: #fff;
+}
+
+.btn-accent:hover{
+    color: #2e354f;
+    background: #d4b44c;
+}
+
+.btn-white{
+    background: #fff;
+    color: #2e354f;
+    margin-left: 24px;
+}
+
+.btn-white:hover{
+    color:#2e354f;
+    background: #999;
+}
+
+/* layouts */
+
+header{
     display: flex;
-    justify-content: center;
+    width: 90%;
+    justify-content:space-between;
     align-items: center;
+    background: #2e354f;
+    color: #fff;
 }
 
-
-.citation-img{
-    width: 100%;
-    height: 100%;
-    border-radius: 0px 24px 24px 0;
-    object-fit: cover;
-    overflow: hidden;
-    font-size: 48px;
-    text-align: center;
-    align-content: center;
-    color: #000;
-    text-shadow: 1px 1px 0px #FFF, -1px -1px 0px #FFF, 1px -1px 0px #FFF, -1px 1px 0px #FFF;
+section {
+    padding: 45px 0;
 }
 
-/* FAQ page
-**************/
-/**********************************************************************************************************************************
-attractions page*/
-/* a grid container with 2 columns and an auto amount of rows */
-.grid-container-attractions {
-    display: grid;
-    /* 2 columns with equal width */
-    grid-template-columns: 1fr 1fr;
-    /* 2 rows with auto height */
-    grid-template-rows: auto auto;
-    /* Optional: gap between grid items */
-    gap: 100px;
-    /* Optional: padding for the grid container */
-    padding: 48px;
-    margin-bottom: 90px;
+.container {
+    width: 90%;
+    max-width: 720px;
+    margin: 0 auto;
 }
 
-/* I'll use this to contain the images in */
-.image-container {
-    /* width of the box */
-    width: 100%;
-    /* height of the box */
-    height: 100%;
-    /* maximum height of the box */
-    max-height: fit-content;
-    /* hiding anything that flows outside the box */
-    overflow: hidden;
-    /* centering image */
+.section-two{
+    background: #2e354f;
+    color: #fff;
+}
+
+.logo{
+    max-width: 240px;
+    border-radius: 0 0 12px 0;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav{ 
     display: flex;
-    /* horizontal centering */
+    width: 80%;
     justify-content: center;
-    /* vertical centering */
-    align-items: center;
-    /* bluring the background */
-    backdrop-filter: blur(10px);
-    border-radius: 24px;
-    box-shadow: -6px 6px 6px #000000, 6px -6px 6px #000000;
+    margin: 0 auto;
 }
-
-.attraction-image {
-    /* image will fill this much of the containers width */
-    width: 60%;
-    /* image will fill this much of the containers height */
-    height: 80%;
-    /* ensures the image covers the container proportionally */
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 24px;
-}
-
-.attraction-info-container {
-    backdrop-filter: blur(10px);
-    border-radius: 24px;
-    box-shadow: -6px 6px 6px #000000, 6px -6px 6px #000000;
-    align-content: center;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
-/*
-attractions page
-***************/
