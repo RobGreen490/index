@@ -213,7 +213,7 @@ sign-up page a*/
 @media (max-width: 768px) {
     header {
         /* Moves the logo above the nav */
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         gap: 12px;
         /* spacing between logo and nav */
