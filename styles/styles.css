@@ -209,3 +209,29 @@ sign-up page a*/
 
 /* sign-up page
 **************/
+
+@media (max-width: 768px) {
+    header {
+        /* Moves the logo above the nav */
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 12px;
+        /* spacing between logo and nav */
+        padding-top: 24px;
+    }
+
+    /* shrink logo on small screens */
+    .logo {
+        max-width: 180px;
+        
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        padding: 10px;
+    }
+}
