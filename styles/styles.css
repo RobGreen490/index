@@ -120,7 +120,7 @@ header{
 .section{
     background: #2e354f;
     /*top, bottom shadow*/
-    box-shadow: 0px -12px 12px 6px #2e354f, 0px 12px 12px 6px #2e354f;
+    box-shadow: 0px -12px 12px 24px #2e354f, 0px 12px 12px 6px #2e354f;
 }
 
 .section-one {
@@ -215,10 +215,14 @@ sign-up page a*/
 
 @media (max-width: 768px) {
 
+    .section-two {
+            box-shadow: 0px -12px 12px 24px #2e354f, 0px 12px 12px 24px #2e354f;
+        }
+
     .section{
         display: flex;
         justify-content: center;
-
+        box-shadow: 0px -12px 12px 24px #2e354f, 0px 12px 12px 24px #2e354f;
     }
 
     header {
