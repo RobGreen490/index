@@ -9,67 +9,70 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <img src="assets/global/Logo.JPG" alt="Logo" />
-        </div>
-        <ul class="nav-list">
-            <li><a href="/website/index.html">Home</a></li>
-            <li><a href="/website/attractions.html">Attractions</a></li>
-            <li><a href="/website/dining.html">Dining</a></li>
-            <li><a href="/website/lodging.html">Lodging</a></li>
-            <li><a href="/website/transportation.html">Transportation</a></li>
-        </ul>
-    </nav>
+    <section class="section">
+        <header>
+            <a href="/website/index.html"><img class="logo" src="assets/global/Logo1.JPG" alt="Logo" /></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/website/index.html">Home</a></li>
+                    <li><a href="/website/attractions.html">Attractions</a></li>
+                    <li><a href="/website/dining.html">Dining</a></li>
+                    <li><a href="/website/lodging.html">Lodging</a></li>
+                    <li><a href="/website/transportation.html">Transportation</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    
+<section class="section-one">
     <div class="container">
         <h1>Sign Up</h1>
-    </div>
+        <br/>
+        <form action="/website/index.html" class="signup-grid">
+        
+            <!-- first name -->
+            <label for="firstName" class="info-label">First Name:</label>
+            <input type="text" class="info-input" id="firstName" name="firstName" placeholder="first name...">
+        
+            <!-- last name -->
+            <label for="lastName" class="info-label">Last Name:</label>
+            <input type="text" class="info-input" id="lastName" name="lastName" placeholder="last name...">
+        
+            <!-- phone number -->
+            <label for="phone" class="info-label">Phone #:</label>
+            <input type="tel" class="info-input" id="phone" name="phone" placeholder="(123)-456-7890">
+        
+            <!-- email -->
+            <label for="email" class="info-label">Email:</label>
+            <input type="email" class="info-input" id="email" name="email" placeholder="email...">
+        
+            <!-- travel date -->
+            <label for="travelDate" class="info-label">Travel Date:</label>
+            <input type="date" class="info-input" id="travelDate" name="travelDate" required min="2025-03-25">
+        
+            <!-- travel mode -->
+            <label for="travelModeAir" for="travelModeAir" class="info-label">Air</label>
+            <label for="travelModeCruise" for="travelModeCruise" class="info-label">Cruise</label>
+            <div class="radio-box">
+                <input type="radio" class="radio-button" id="travelModeAir" name="travelMode" value="air">
+            </div>
+            <div class="radio-box">
+                <input type="radio" class="radio-button" id="travelModeCruise" name="travelMode" value="cruise">
+            </div>
+        
+            <!-- submit button -->
+            <button type="submit" class="submit-button">Submit</button>
 
-    
+            <!-- reset button -->
+            <button type="reset" class="submit-button">reset</button>
+        </form>
     </div>
+</section>
+
     <!--
     TODO: add method="POST" to form
      -->
-    <form action="/website/index.html" class="signup-grid">
-
-        <!-- first name -->
-        <label for="firstName" class="info-label">First Name:</label>
-        <input type="text" class="info-input" id="firstName" name="firstName" placeholder="first name...">
-
-        <!-- last name -->
-        <label for="lastName" class="info-label">Last Name:</label>
-        <input type="text" class="info-input" id="lastName" name="lastName" placeholder="last name...">
-
-        <!-- phone number -->
-        <label for="phone" class="info-label">Phone #:</label>
-        <input type="tel" class="info-input" id="phone" name="phone" placeholder="(123)-456-7890">
-        
-        <!-- email -->
-        <label for="email" class="info-label">Email:</label>
-        <input type="email" class="info-input" id="email" name="email" placeholder="email...">
-
-        <!-- travel date -->
-        <label for="travelDate" class="info-label">Travel Date:</label>
-        <input type="date" class="info-input" id="travelDate" name="travelDate" required min="2025-03-25">
-
-        <!-- travel mode -->
-        <label for="travelModeAir" for="travelModeAir" class="info-label">Air</label>
-        <label for="travelModeCruise" for="travelModeCruise" class="info-label">Cruise</label>
-        <div class="radio-box">
-            <input type="radio" class="radio-button" id="travelModeAir" name="travelMode" value="air">
-        </div>
-        <div class="radio-box">
-            <input type="radio" class="radio-button" id="travelModeCruise" name="travelMode" value="cruise">
-        </div>
-
-        <!-- submit button -->
-        <button type="submit" class="submit-button">Submit</button>
-    </form>
-
-    <footer>
-        <a href="/website/faq.html">FAQ</a>
-        <a href="/website/citations.html">citations</a>
-    </footer>
+    
 </body>
 
 </html>
